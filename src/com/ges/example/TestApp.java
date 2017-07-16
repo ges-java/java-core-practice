@@ -9,7 +9,33 @@ public class TestApp {
 	 * Main method
 	 */
 	public static void main(String[] args) {
-		//
+		Human h1 = new Human("Daniel", 15);
+		Human h2 = new Human("Elvis", 29);
+		System.out.println(canDrinkAlcohol(h1));
+		System.out.println(canDrinkAlcohol(h2));
+	}
+	
+	public static boolean canDrinkAlcohol(Human human) {
+		return (human.age >= 21) ? true : false;
+	}
+	
+	public void oldMain() {
+
+		int a = 5;
+		int i = a++;
+		// i = a & a = a + 1
+		System.out.println(i);
+		System.out.println(a);
+		// i 5 a 6 
+		
+		int b = 5;
+		int k = ++b;
+		// b = b + 1 & k = b
+		System.out.println(k);
+		System.out.println(b);
+		// k 6 b 6
+		
+		/*
 		Human h1 = new Human("Adam");
 		System.out.println(h1.name);
 		System.out.println(h1.age);
@@ -34,6 +60,7 @@ public class TestApp {
 		System.out.println(h4.height);
 		System.out.println(h4.weight);
 		System.out.println(h4.isMale);
+		*/
 	}
 	
 	/*
