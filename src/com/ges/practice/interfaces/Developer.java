@@ -1,6 +1,6 @@
 package com.ges.practice.interfaces;
 
-public class Developer extends DefaultEmployee  {
+public class Developer extends DefaultEmployee implements Dispensable {
 	
 	private String language;
 	
