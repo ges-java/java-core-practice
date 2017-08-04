@@ -30,12 +30,10 @@ public abstract class DefaultEmployee implements Employee, WorkHours {
 		return type;
 	}
 	
-	@Override
 	public String getFullName() {
 		return name.toUpperCase();
 	}
 	
-	@Override
 	public double getAnnualSalary() {
 		if ("FTE".equals(type.toUpperCase())) {
 			return 52 * 5 * ratePerHour * HOURS_FTE;
@@ -43,7 +41,6 @@ public abstract class DefaultEmployee implements Employee, WorkHours {
 		return 52 * 5* ratePerHour * HOURS_C;
 	}
 	
-	@Override
 	public String getEmployeeType() {
 		return type.toUpperCase();
 	}

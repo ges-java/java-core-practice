@@ -9,7 +9,6 @@ public class Developer extends DefaultEmployee implements Dispensable {
 		this.language = language;
 	}
 
-	@Override
 	public void printInfo() {
 		System.out.println("NAME: " + getName());
 		System.out.println("EMPLOYEE CODE: " + getCode());
